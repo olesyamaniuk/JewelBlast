@@ -1136,35 +1136,53 @@ strong {
   position: fixed;
   bottom: 10px;
   width: 375px;
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(149, 49, 133, 1);
-  box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(60px);
   z-index: 1000;
   display: none;
 }
 
 .w-u-cookie-popup-text-two {
-  color: rgba(87, 78, 68, 1);
+  font-family: News Cycle;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(43, 8, 68, 1);
 }
 
 .w-u-cookie-button-container {
-  padding: 30px 0 0;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .w-u-cookie-button {
   border: none;
   background-color: transparent;
+  border: 1px solid rgba(216, 0, 18, 1);
+  width: 116px;
+  border-radius: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-family: News Cycle;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(43, 8, 68, 1);
 }
 
 #accept-cookies {
+  background: rgba(216, 0, 18, 1);
+  color: rgba(240, 253, 252, 1);
 }
 
 .w-u-close-popup {
@@ -1174,38 +1192,56 @@ strong {
   font-size: 20px;
   cursor: pointer;
 }
+.w-u-cookie-popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 
 @media screen and (min-width: 1191px) {
   .w-u-cookie-popup-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 100px;
   }
 
   .w-u-cookie-popup-text-two {
-    font-family: Raleway;
-    font-size: 18px;
+    font-family: News Cycle;
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    width: 648px;
-  }
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
 
+    width: 943px;
+  }
+  .w-u-cookie-button {
+    width: 160px;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: News Cycle;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
   .w-u-cookie-button-container {
     padding: 0;
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 16px;
   }
 
   .w-u-cookie-popup {
     position: fixed;
     bottom: 10px;
     width: 1440px;
-    padding: 32px;
+    padding: 32px 30px;
     display: none;
   }
 }
